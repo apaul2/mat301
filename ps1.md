@@ -119,11 +119,18 @@ FROM database.table;
 ===
 
 1. What does SQL stand for?  How is it pronounced?
+  SQL-Structured Query Language
+        "Es Que El" or Sequel
 2. Are SQL commands case-sensitive?  How can you determine? 
+  No they are incase-sensitive, because it doesn't matter if the word is all capitalized or not or some letter are or not.
 3. What does DQL stand for?
+  DQL-Data Query Language it is the "SELECT". It is a sublanguage of SQL
 4. True or False:  Is it necessary to use the `FROM` clause with the select statement? 
+  Yes it is importnat to to have the clause 'From" in teh select statement.
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
+  False, however you can use it to find out what country stuff was made it and how many products they have made.
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
+
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
 8. Select all product names.
 9. List the MSRP for all products in ascending order.
