@@ -153,18 +153,32 @@ where category_id = 430 and manufacturer_id = 428
 from unemath_Paul.Products
 where category_id = 430 and manufacturer_id = 428
 13. How many countries make products contained in the store?
-  
+  select distinct country
+from unemath_Paul.Products
 14. How many products are manufactured in the USA?
-  
+  select count(*)
+from unemath_Paul.Products
+where country='USA'
 15. How many products cost the company less than $10?
-  
+  select price
+from unemath_Paul.Products
+where price<'10'
 16. How many products cost the company less than $10 and sell for more than $20?
-  
+  select price
+from unemath_Paul.Products
+where price<'10' or price>'20'
 17. How many products cost the company less than $10 and sell for less than $20?
-  
+  select price
+from unemath_Paul.Products
+where price<'10' or price<'20'
 18. Which products cost less than $10 and sell for more than $20?
   
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
-  
+  select ship_weight
+from unemath_Paul.Products
+where ship_weight<'1' or ship_weight>'20'
 20. Create your own query.
-  
+  Find products that have an inventory of 50 or more?
+  select inventory
+from unemath_Paul.Products
+where inventory>'50'
