@@ -130,19 +130,41 @@ FROM database.table;
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
   False, however you can use it to find out what country stuff was made it and how many products they have made. It is to filter out something you want within the Data.
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
-  
+  The purpose is to get teh data in order from ascending or desending filtered in order. The default value is ascending order.
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
   
 8. Select all product names.
+  select name
+from unemath_Paul.Products
 9. List the MSRP for all products in ascending order.
+  select MSRP 
+  from unemath_Paul.Products
+  order by price
 10. Find all products within  category 430.  What is category 430?
+  select *
+from unemath_Paul.Products
+where category_id = 430
 11. Find all product id and names in category 430 manufactured by 428.
+  select *
+from unemath_Paul.Products
+where category_id = 430 and manufacturer_id = 428
 12. How many products in category 430 manufactured by 428?
+  select count(*)
+from unemath_Paul.Products
+where category_id = 430 and manufacturer_id = 428
 13. How many countries make products contained in the store?
+  
 14. How many products are manufactured in the USA?
+  
 15. How many products cost the company less than $10?
+  
 16. How many products cost the company less than $10 and sell for more than $20?
+  
 17. How many products cost the company less than $10 and sell for less than $20?
+  
 18. Which products cost less than $10 and sell for more than $20?
+  
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
+  
 20. Create your own query.
+  
