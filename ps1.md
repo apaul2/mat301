@@ -130,8 +130,9 @@ FROM database.table;
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
   False, however you can use it to find out what country stuff was made it and how many products they have made. It is to filter out something you want within the Data.
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
-
+  
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
+  
 8. Select all product names.
 9. List the MSRP for all products in ascending order.
 10. Find all products within  category 430.  What is category 430?
