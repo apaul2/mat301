@@ -132,7 +132,7 @@ FROM database.table;
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
   The purpose is to get teh data in order from ascending or desending filtered in order. The default value is ascending order.
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
-  
+  The products in the table are case sensitive. no i shouldn't be case sensitive
 8. Select all product names.
   select name
 from unemath_Paul.Products
@@ -172,7 +172,9 @@ where price<'10' or price>'20'
 from unemath_Paul.Products
 where price<'10' or price<'20'
 18. Which products cost less than $10 and sell for more than $20?
-  
+  Select Columns
+From unemath_Paul.Products
+Where Price<'10' and Msrp>'20'
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
   select ship_weight
 from unemath_Paul.Products
