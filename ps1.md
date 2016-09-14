@@ -164,17 +164,17 @@ where country='USA'
 from unemath_Paul.Products
 where price<'10'
 16. How many products cost the company less than $10 and sell for more than $20?
-  select price
-from unemath_Paul.Products
-where price<'10' or price>'20'
-17. How many products cost the company less than $10 and sell for less than $20?
-  select price
-from unemath_Paul.Products
-where price<'10' or price<'20'
-18. Which products cost less than $10 and sell for more than $20?
-  Select Columns
+  Select price and msrp 
 From unemath_Paul.Products
-Where Price<'10' and Msrp>'20'
+Where (Price<'10') and (Msrp>'20')
+17. How many products cost the company less than $10 and sell for less than $20?
+  Select price and msrp 
+From unemath_Paul.Products
+Where (Price<'10') and (Msrp<'20')
+18. Which products cost less than $10 and sell for more than $20?
+  Select price and msrp 
+From unemath_Paul.Products
+Where (Price<'10') and (Msrp>'20')
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
   select ship_weight
 from unemath_Paul.Products
