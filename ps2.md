@@ -166,7 +166,9 @@ where price<'50' and country='china'
 From unemath_Paul.Products
 where description like 'bird%_bath%'
 3. Find products whose cost is between $10 and $100.
-  
+  Select price
+From unemath_Paul.Products
+where price between 10 and 100
 4. Find products whose cost is less than or equal to $59.99.
   
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
