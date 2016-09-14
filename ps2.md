@@ -170,13 +170,24 @@ where description like 'bird%_bath%'
 From unemath_Paul.Products
 where price between 10 and 100
 4. Find products whose cost is less than or equal to $59.99.
-  
+  Select price
+From unemath_Paul.Products
+where price<='59.99'
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
-  
+  Select product_id
+From unemath_Paul.Products
+where product_id between 5000 and 6000 or product_id in (7483, 4939, 3452, 9848, 11293, 12001)
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
-  
+  Select product_id
+From unemath_Paul.Products
+where product_id not between 5000 and 6000 or product_id not in (7483, 4939, 3452, 9848, 11293, 12001)
 7. Find products whose country code is NULL.
-  
+  Select country
+From unemath_Paul.Products
+where country is NULL
+  Select country
+From unemath_Paul.Products
+where country=''
 8. Calculuate the shipping volume and report it as 'Volume'.
   Select Round(ship_depth*ship_length*ship_width,2) as volume
 From unemath_Paul.Products
