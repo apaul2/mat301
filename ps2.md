@@ -158,18 +158,37 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 ===
 
 1. Select all products (UPC) made in China whose price is less than $50.
+  Select upc
+From unemath_Paul.Products
+where price<'50' and country='china'
 2. Find products with "bird bath" in the description.
+  
 3. Find products whose cost is between $10 and $100.
+  
 4. Find products whose cost is less than or equal to $59.99.
+  
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
+  
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
+  
 7. Find products whose country code is NULL.
+  
 8. Calculuate the shipping volume and report it as 'Volume'.
+  Select Round(ship_depth*ship_length*ship_width,2) as volume
+From unemath_Paul.Products
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
+  Select price, round(1.35*price+0.075*(1.35*price),2)
+From unemath_Paul.Products
 10. True or False: Both conditions when using the OR operator must be true.
+  
 11. What is the logical negation of the IN operator?
+  
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
+  
 13. Select products with length less than 12 inches and sort decsending.
+  
 14. How many products are there whose price is between $10 and $20?
+  
 15. How many products are there made in China whose MSRP is between $10 and $20.
+  
 
