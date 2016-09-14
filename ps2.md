@@ -162,7 +162,9 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 From unemath_Paul.Products
 where price<'50' and country='china'
 2. Find products with "bird bath" in the description.
-  
+  Select description
+From unemath_Paul.Products
+where description like 'bird%_bath%'
 3. Find products whose cost is between $10 and $100.
   
 4. Find products whose cost is less than or equal to $59.99.
