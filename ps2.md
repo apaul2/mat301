@@ -195,9 +195,14 @@ From unemath_Paul.Products
   Select price, round(1.35*price+0.075*(1.35*price),2)
 From unemath_Paul.Products
 10. True or False: Both conditions when using the OR operator must be true.
-  
+False  
+SELECT *
+FROM unemath_Paul.Products
+WHERE name='guide' or price<'5'
 11. What is the logical negation of the IN operator?
-  
+  SELECT Price
+FROM unemath_Paul.Products
+WHERE price in (10, 15, 20, 25, 30)
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
   SELECT * 
 FROM unemath_Paul.Products
