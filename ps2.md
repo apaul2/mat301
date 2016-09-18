@@ -203,7 +203,9 @@ From unemath_Paul.Products
 FROM unemath_Paul.Products
 WHERE price BETWEEN '10' and '100'
 13. Select products with length less than 12 inches and sort decsending.
-  
+  SELECT length
+FROM unemath_Paul.Products
+WHERE length <'12' order by length desc
 14. How many products are there whose price is between $10 and $20?
   select price 
 from unemath_Paul.Products
