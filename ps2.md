@@ -199,11 +199,17 @@ From unemath_Paul.Products
 11. What is the logical negation of the IN operator?
   
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
-  
+  SELECT * 
+FROM unemath_Paul.Products
+WHERE price BETWEEN '10' and '100'
 13. Select products with length less than 12 inches and sort decsending.
   
 14. How many products are there whose price is between $10 and $20?
-  
+  select price 
+from unemath_Paul.Products
+where price between '10' and '20'
 15. How many products are there made in China whose MSRP is between $10 and $20.
-  
+  select msrp 
+from unemath_Paul.Products
+where msrp between '10' and '20' and country='china'
 
