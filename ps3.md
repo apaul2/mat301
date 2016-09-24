@@ -1,6 +1,9 @@
 ## Problem Set 3 
 
 1. Define the terms: relation, tuple, attribute, record, and field.
+  Relation is also mean a table and mean when two or more concepts, objects, or people that are connected.
+  Tuple is row or record.
+  Attribrute is also a Field or Column.
 2. What are keys in a relation?
 
 3. What is a surrogate key and how is it used?
