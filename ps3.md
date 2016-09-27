@@ -20,6 +20,7 @@
 
 8. For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 Yes an email can be used as a primary key because it is unique and everybody has their own unqie email address. However it would be the best choice becuase people have more than one, they delete email address, and change email address all the time. This would be a natural key.
+
 9. Given two relations S and R below find the Cartsian Product S x R. 
 10. Find the natural join between the Faculty and Department relations below.
 
