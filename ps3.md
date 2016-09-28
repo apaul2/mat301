@@ -20,27 +20,28 @@
   If there is a relations that has no duplicate data, we can say that there is atleast on primary key. This is true because primary key says it has to be unique. Being unique means there is know two numbers that are the same in the column.
   
 6. Give an example of a relation.  Determine a natural key for this relation.
-  |Name   | N_Id| G | A | P |+/-|
-  |-------|-----|---|---|---|---|
-  |Alex   |  1  | 43| 30| 83| 18|
-  |Sidney |  2  | 30| 62| 92| 15|
-  |Johnny |  3  | 25| 58| 83| -9|
-  |Connor |  4  | 24| 45| 69| 4 |
-  |Erik   |  5  | 23| 45| 68| -2|
-  |Brent  |  6  | 18| 40| 58| 7 |
+|Name   | N_Id| G | A | P |+/-|
+|-------|-----|---|---|---|---|
+|Alex   |  1  | 43| 30| 83| 18|
+|Sidney |  2  | 30| 62| 92| 15|
+|Johnny |  3  | 25| 58| 83| -9|
+|Connor |  4  | 24| 45| 69| 4 |
+|Erik   |  5  | 23| 45| 68| -2|
+|Brent  |  6  | 18| 40| 58| 7 |
   The natual key would Be N_ID which is name ID because it is unique.
    
   For question 7 - 8, Consider product *orders*.  In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).  
 
 7. Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
-  First name|Last name|    Street    |    City    |State|    Zip   |   Phone   |   Email   |  Item   |Quanitiy| Price |
-  Tony      |Smith    |11 hills beach| Biddeford  | Me  |  04005   |           |           |         |        |       |
-  Brad      |Johnson  |39 thurston rd| Cornville  | Me  |  04976   |           |           |         |        |       |
-  Lilly     |Lesile   |49 main st    | Skowhegan  | Me  |  04976   |           |           |         |        |       |
-  Emma      |Todd     |20 brighton rd| Brighton   | Me  |          |           |           |         |        |       |
-  John      |Carson   |79 KDM drive  | Waterville | Me  |          |           |           |         |        |       |
-  Kayla     |Green    |50 pool st    | Biddeford  | Me  |  04005   |           |           |         |        |       |
-  Debbie    |Otis     |              |            | Me  |          |           |           |         |        |       |
+|First name|Last name|    Street    |    City    |State|    Zip   |   Phone   |   Email   |  Item   |Quanitiy| Price |
+|----------|---------|--------------|------------|-----|----------|-----------|-----------|---------|--------|-------|
+|Tony      |Smith    |11 hills beach| Biddeford  | Me  |  04005   |           |           |         |        |       |
+|Brad      |Johnson  |39 thurston rd| Cornville  | Me  |  04976   |           |           |         |        |       |
+|Lilly     |Lesile   |49 main st    | Skowhegan  | Me  |  04976   |           |           |         |        |       |
+|Emma      |Todd     |20 brighton rd| Brighton   | Me  |          |           |           |         |        |       |
+|John      |Carson   |79 KDM drive  | Waterville | Me  |          |           |           |         |        |       |
+|Kayla     |Green    |50 pool st    | Biddeford  | Me  |  04005   |           |           |         |        |       |
+|Debbie    |Otis     |              |            | Me  |          |           |           |         |        |       |
             
 8. For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
   Yes an email can be used as a primary key because it is unique and everybody has their own unqie email address. However it would be the best choice becuase people have more than one, they delete email address, and change email address all the time. This would be a natural key.
