@@ -21,6 +21,7 @@
   
 6. Give an example of a relation.  Determine a natural key for this relation.
   |Name   | N_Id| G | A | P |+/-|
+  |-------|-----|---|---|---|---|
   |Alex   |  1  | 43| 30| 83| 18|
   |Sidney |  2  | 30| 62| 92| 15|
   |Johnny |  3  | 25| 58| 83| -9|
