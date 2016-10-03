@@ -39,23 +39,21 @@ Orders
   Address       Quantity
   Email         MSRP
  
-Customer (PK)
-CID, Last, First, Phone, Email, Zip (1)
+Customers (PK)
+CID (1), Last, First, Phone, Email, Zip (1)
 
-Zip Table (PK)
+Zips
 Zip (many), City, State
- 
-----------------------------------------------------------------------------------------------------------------------
-|First name|Last name|    Street    |    City    |State|    Zip   |   Phone   |   Email   |  Item   |Quanitiy| Price |
-|----------|---------|--------------|------------|-----|----------|-----------|-----------|---------|--------|-------|
-|Tony      |Smith    |11 hills beach| Biddeford  | Me  |  04005   |           |           |         |        |       |
-|Brad      |Johnson  |39 thurston rd| Cornville  | Me  |  04976   |           |           |         |        |       |
-|Lilly     |Lesile   |49 main st    | Skowhegan  | Me  |  04976   |           |           |         |        |       |
-|Emma      |Todd     |20 brighton rd| Brighton   | Me  |          |           |           |         |        |       |
-|John      |Carson   |79 KDM drive  | Waterville | Me  |          |           |           |         |        |       |
-|Kayla     |Green    |50 pool st    | Biddeford  | Me  |  04005   |           |           |         |        |       |
-|Debbie    |Otis     |              |            | Me  |          |           |           |         |        |       |
-            
+
+Orders 
+OID, CID (many)
+
+Order Details
+ODID, PID (many), QTY, OID
+
+Products
+PID (1), MSRP
+
 8. For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
   Yes an email can be used as a primary key because it is unique and everybody has their own unqie email address. However it would be the best choice becuase people have more than one, they delete email address, and change email address all the time. This would be a natural key.
 
