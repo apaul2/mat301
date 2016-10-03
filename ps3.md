@@ -20,6 +20,7 @@
   If there is a relations that has no duplicate data, we can say that there is atleast on primary key. This is true because primary key says it has to be unique. Being unique means there is know two numbers that are the same in the column.
   
 6. Give an example of a relation.  Determine a natural key for this relation.
+-------------------------------
 |Name   | N_Id| G | A | P |+/-|
 |-------|-----|---|---|---|---|
 |Alex   |  1  | 43| 30| 83| 18|
