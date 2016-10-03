@@ -33,6 +33,19 @@
   For question 7 - 8, Consider product *orders*.  In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).  
 
 7. Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
+Orders
+  Customer      Products
+  Name          Item #
+  Address       Quantity
+  Email         MSRP
+ 
+Customer (PK)
+CID, Last, First, Phone, Email, Zip (1)
+
+Zip Table (PK)
+Zip (many), City, State
+ 
+----------------------------------------------------------------------------------------------------------------------
 |First name|Last name|    Street    |    City    |State|    Zip   |   Phone   |   Email   |  Item   |Quanitiy| Price |
 |----------|---------|--------------|------------|-----|----------|-----------|-----------|---------|--------|-------|
 |Tony      |Smith    |11 hills beach| Biddeford  | Me  |  04005   |           |           |         |        |       |
