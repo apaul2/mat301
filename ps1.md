@@ -130,57 +130,64 @@ FROM database.table;
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
   False, however you can use it to find out what country stuff was made it and how many products they have made. It is to filter out something you want within the Data.
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
-  The purpose is to get teh data in order from ascending or desending filtered in order. The default value is ascending order.
+  The purpose is to get the data in order from ascending or desending filtered in order. The default value is ascending order.
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
-  The products in the table are case sensitive. no i shouldn't be case sensitive
+  The products in the table are case sensitive. It should be case insensitive. Although it could be either one.
 8. Select all product names.
-  select name
-from unemath_Paul.Products
-9. List the MSRP for all products in ascending order.
-  select MSRP 
+  select *
   from unemath_Paul.Products
-  order by price
+9. List the MSRP for all products in ascending order.
+  select * 
+  from unemath_Paul.Products
+  order by MSRP
 10. Find all products within  category 430.  What is category 430?
   select *
-from unemath_Paul.Products
-where category_id = 430
+  from unemath_Paul.Products
+  where category_id = 430
+  Category 430 is wine glasses.
 11. Find all product id and names in category 430 manufactured by 428.
-  select *
-from unemath_Paul.Products
-where category_id = 430 and manufacturer_id = 428
+  select product_id, name
+  from unemath_Paul.Products
+  where category_id = 430 and manufacturer_id = 428
 12. How many products in category 430 manufactured by 428?
   select count(*)
-from unemath_Paul.Products
-where category_id = 430 and manufacturer_id = 428
+  from unemath_Paul.Products
+  where category_id = 430 and manufacturer_id = 428
+  18 products
 13. How many countries make products contained in the store?
-  select distinct country
-from unemath_Paul.Products
+  select Count(distinct country)
+  from unemath_Paul.Products
+  40 Countries
 14. How many products are manufactured in the USA?
   select count(*)
-from unemath_Paul.Products
-where country='USA'
+  from unemath_Paul.Products
+  where country='USA'
+  4091 Products
 15. How many products cost the company less than $10?
   select price
-from unemath_Paul.Products
-where price<'10'
+  from unemath_Paul.Products
+  where price<'10'
+  7567 Products
 16. How many products cost the company less than $10 and sell for more than $20?
   Select price and msrp 
-From unemath_Paul.Products
-Where (Price<'10') and (Msrp>'20')
+  From unemath_Paul.Products
+  Where (Price<'10') and (Msrp>'20')
+  7532 Products
 17. How many products cost the company less than $10 and sell for less than $20?
   Select price and msrp 
-From unemath_Paul.Products
-Where (Price<'10') and (Msrp<'20')
+  From unemath_Paul.Products
+  Where (Price<'10') and (Msrp<'20')
 18. Which products cost less than $10 and sell for more than $20?
   Select price and msrp 
-From unemath_Paul.Products
-Where (Price<'10') and (Msrp>'20')
+  From unemath_Paul.Products
+  Where (Price<'10') and (Msrp>'20')
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
   select ship_weight
-from unemath_Paul.Products
-where ship_weight<'1' or ship_weight>'20'
+  from unemath_Paul.Products
+  where ship_weight<'1' or ship_weight>'20'
+  1106 Products
 20. Create your own query.
   Find products that have an inventory of 50 or more?
   select inventory
-from unemath_Paul.Products
-where inventory>'50'
+  from unemath_Paul.Products
+  where inventory>'50'
