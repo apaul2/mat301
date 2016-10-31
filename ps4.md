@@ -1,8 +1,27 @@
 ## Problem Set 4 
 
 1. Create three tables: Customers, Orders, and OrderItems.
+CREATE TABLE `unemath_Paul`.`Customers` (
+  `Customer_id` INT NOT NULL,
+  `Customer_lastname` VARCHAR(10),
+  `Customer_firstname` VARCHAR(15),
+  `Customer_email` VARCHAR(45),
+  `Customer_zip` VARCHAR(9),
+  `Customer_address1` VARCHAR(25),
+  `Customer_address2` VARCHAR(20),
+  PRIMARY KEY (`Customer_id`));
 
+CREATE TABLE `unemath_Paul`.`Orders` (
+  `Orders_id` INT NOT NULL,
+  `Customer_id` INT NULL,
+  `Order_total` DECIMAL(2) NULL,
+  `Order_date` DATETIME NULL,
+  PRIMARY KEY (`Orders_id`));
+  
+  
+  
 2. Why do we need an OrderItems table?
+  We need a order items table because one customer can buy more than one item and want to 
 
 3. Create linked tables in MS Access.
 
