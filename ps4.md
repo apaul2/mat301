@@ -6,9 +6,10 @@ CREATE TABLE `unemath_Paul`.`Customers` (
   `Customer_lastname` VARCHAR(10),
   `Customer_firstname` VARCHAR(15),
   `Customer_email` VARCHAR(45),
-  `Customer_zip` VARCHAR(9),
+  `Zip_id` VARCHAR(9),
   `Customer_address1` VARCHAR(25),
   `Customer_address2` VARCHAR(20),
+  `Cell Phone` CHAR(10) NULL AFTER `Customer_address2`,
   PRIMARY KEY (`Customer_id`));
 
 CREATE TABLE `unemath_Paul`.`Orders` (
@@ -18,6 +19,14 @@ CREATE TABLE `unemath_Paul`.`Orders` (
   `Order_date` DATETIME NULL,
   PRIMARY KEY (`Orders_id`));
   
+  CREATE TABLE `unemath_Paul`.`Order Items` (
+  `Orderitems_id` INT NOT NULL,
+  `Product_id` INT NULL,
+  `Customer_id` VARCHAR(45) NULL,
+  `Item price` DECIMAL(2) NULL AFTER `Customer_id`,
+  `Order_id` INT(11) NULL AFTER `Item Quantity`,
+  `Item Quantity` VARCHAR(45) NULL AFTER `Item price`,
+  PRIMARY KEY (`Orderitems_id`));
   
   
 2. Why do we need an OrderItems table?
