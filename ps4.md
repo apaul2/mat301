@@ -1,7 +1,7 @@
 ## Problem Set 4 
 
 1. Create three tables: Customers, Orders, and OrderItems.
-CREATE TABLE `unemath_Paul`.`Customers` (
+  CREATE TABLE `unemath_Paul`.`Customers` (
   `Customer_id` INT NOT NULL,
   `Customer_lastname` VARCHAR(10),
   `Customer_firstname` VARCHAR(15),
@@ -12,7 +12,7 @@ CREATE TABLE `unemath_Paul`.`Customers` (
   `Cell Phone` CHAR(10) NULL AFTER `Customer_address2`,
   PRIMARY KEY (`Customer_id`));
 
-CREATE TABLE `unemath_Paul`.`Orders` (
+  CREATE TABLE `unemath_Paul`.`Orders` (
   `Orders_id` INT NOT NULL,
   `Customer_id` INT NULL,
   `Order_total` DECIMAL(2) NULL,
@@ -27,7 +27,6 @@ CREATE TABLE `unemath_Paul`.`Orders` (
   `Order_id` INT(11) NULL AFTER `Item Quantity`,
   `Item Quantity` VARCHAR(45) NULL AFTER `Item price`,
   PRIMARY KEY (`Orderitems_id`));
-  
   
 2. Why do we need an OrderItems table?
   We need a order items table because one customer can buy more than one item and want to 
