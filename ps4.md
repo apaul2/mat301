@@ -1,6 +1,7 @@
 ## Problem Set 4 
 
 1. Create three tables: Customers, Orders, and OrderItems.
+  
   CREATE TABLE `unemath_Paul`.`Customers` (
   `Customer_id` INT NOT NULL,
   `Customer_lastname` VARCHAR(10),
