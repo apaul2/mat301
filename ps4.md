@@ -74,7 +74,17 @@
   (1060,'Ian','Mooney','946-576-3910','at@imperdiet.com','74501 Suspendisse St.','P.O. Box 895',26034);
 
 8. Find all customer orders.
-
+  SELECT *
+  FROM unemath_Paul.Orders
 9. Select all customers that orders a certain product (This will depend on what data you entered into the table).  Find all customers that ordered product 3452.  
-
+  SELECT OrderDetails.product, Orders.customer
+  FROM unemath_Paul.OrderDetails, unemath_Paul.Orders
+  WHERE unemath_Paul.OrderDetails.product=3452
+  
 10. List 5 questions that you can answer from this data.
+  What is Customers first name having the id of 1045?
+  What is the price of prodcut 3452?
+  
+    
+
+
