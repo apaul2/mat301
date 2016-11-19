@@ -30,6 +30,7 @@
   PRIMARY KEY (`Orderitems_id`));
   
 2. Why do we need an OrderItems table?
+
   We need a order items table because one customer can buy more than one item and want to 
 
 3. Create linked tables in MS Access.
@@ -41,6 +42,7 @@
 6. Use forms created in 4 and 5 to insert Customers and Orders.  Add customers that have not made any orders. Make the number of entries relatively small.  Why?  
 
 7. Use SQL DML to INSERT records into Customers and Orders (and OrderItems).  
+
   INSERT INTO `unemath_quinlan`.`Customers` (`id`,`fname`,`lname`,`phone`,`email`,`address1`,`address2`,`zip`) VALUES 
   (1031,'Imelda','Holcomb','937-484-2402','dolor@necenim.com','8350 Adipiscing Rd.','',99811),
   (1032,'Teagan','Crane','263-915-6116','risus@in.com','139-1596 Nisi Ave','Ap #126-2752 Varius. Ave','LR09 9JR'),
@@ -74,14 +76,18 @@
   (1060,'Ian','Mooney','946-576-3910','at@imperdiet.com','74501 Suspendisse St.','P.O. Box 895',26034);
 
 8. Find all customer orders.
+  
   SELECT *
   FROM unemath_Paul.Orders
+  
 9. Select all customers that orders a certain product (This will depend on what data you entered into the table).  Find all customers that ordered product 3452.  
+  
   SELECT OrderDetails.product, Orders.customer
   FROM unemath_Paul.OrderDetails, unemath_Paul.Orders
   WHERE unemath_Paul.OrderDetails.product=3452
   
 10. List 5 questions that you can answer from this data.
+
   What is Customers first name having the id of 1045?
   What is the price of prodcut 3452?
   What is the name of the prodcut 3452?
