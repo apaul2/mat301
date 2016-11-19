@@ -46,7 +46,7 @@
   (1032,'Teagan','Crane','263-915-6116','risus@in.com','139-1596 Nisi Ave','Ap #126-2752 Varius. Ave','LR09 9JR'),
   (1033,'Destiny','Russell','361-305-1439','non@gravida.edu','9135 Magna. Street','963-6955 Lacinia Road','97891'),
   (1034,'Marsden','Dillard','821-151-2410','semper.et@nullaIntincidunt.com','4270 Aliquam Street','',26034),
-  (1035,'Slade','Fowler','752-248-5096','tellus.imperdiet@quisturpisvitae.com','4368 Pede. Avenue','Apt 428',31775),
+  (1035,'Slade','Fowler','752-248-5096','tellus.imperdiet@quisturpisvitae.com','4368 Pede. Avenue','Apt 428',31775),WHa
   (1036,'Sawyer','Mullen','201-029-2021','Maecenas.malesuada@Crassed.edu','298-1833 Mauris. Avenue','P.O. Box 905',73223),
   (1037,'Sydney','Guy','578-796-5277','ornare@velitdui.ca','Ap #249-3884 Elit St.','5786 Interdum. Road',26034),
   (1038,'Jessamine','Hall','330-338-1589','jahll@ovbc.edu','8738 Ohio Av.','',43920),
@@ -84,7 +84,7 @@
 10. List 5 questions that you can answer from this data.
   What is Customers first name having the id of 1045?
   What is the price of prodcut 3452?
-  
-    
-
-
+  What is the name of the prodcut 3452?
+  What is the customers phone number having the id of 1045?
+  What is the customers zip have the id of 1045?
+  What are the order dates of product id of 1045?
