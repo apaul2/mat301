@@ -21,7 +21,33 @@
   b. Large table with a lot of data manipulation
     No
 9.  Determine which is most restrictive, products in categories 200 or 201 and products manufactured by manufacturer number 72.
-  
+  SELECT 
+    category_id, manufacturer_id
+  FROM
+    unemath_Paul.Products
+  WHERE
+    category_id = '200'
+    AND manufacturer_id = '72'
+    Six rows returned
+    
+    SELECT 
+    category_id, manufacturer_id
+  FROM
+    unemath_Paul.Products
+  WHERE
+    category_id = '201'
+    AND manufacturer_id = '72'
+    Two rows returned
+    
+   Prodcuts that has a caterogies of 201 and a manufacturer of 72 is more restictive than the categories of 200 with a manufacturer of 72.
+   
 10.  Create a VIEW of all products from categories 200 or 201 manufactured by manufacturer 72 or 88. 
-  
+  CREATE VIEW Category_Manufacturer AS
+  SELECT
+    category_id, manufacturer_id
+  FROM
+    unemath_Paul.Products
+  WHERE
+    category_id in('200','201')
+    AND manufacturer_id in('72', '88')
   
